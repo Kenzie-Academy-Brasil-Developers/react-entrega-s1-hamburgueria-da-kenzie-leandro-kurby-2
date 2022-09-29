@@ -15,8 +15,6 @@ export const MainPage = ({ products, filteredProducts, setFilteredProducts }) =>
   useEffect(() => {filteredProducts.length === 0 && inputValue !== "" && 
   notifyError("Nenhum produto foi encontrado")}, [filteredProducts]);
 
-  console.log(filteredProducts);
-
   function showProducts(event) {
     event.preventDefault()
     setFilteredProducts(products.filter(({name, category}) => name.toLowerCase().includes(inputValue.toLowerCase().trim()) ||
