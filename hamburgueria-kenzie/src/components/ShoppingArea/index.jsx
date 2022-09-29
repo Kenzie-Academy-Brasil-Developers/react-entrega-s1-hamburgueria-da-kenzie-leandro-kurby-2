@@ -17,7 +17,8 @@ export const MainPage = ({ products, filteredProducts, setFilteredProducts }) =>
 
   function showProducts(event) {
     event.preventDefault()
-    setFilteredProducts(products.filter(({name}) => name.toLowerCase().includes(inputValue.toLowerCase().trim())));
+    setFilteredProducts(products.filter(({name}) => name.toLowerCase().includes(inputValue.toLowerCase().trim())) ||
+     products.filter(({category}) => category.toLowerCase().includes(inputValue.toLowerCase().trim())));
   }
 
   return (
