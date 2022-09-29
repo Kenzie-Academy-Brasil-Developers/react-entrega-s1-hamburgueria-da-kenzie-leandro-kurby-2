@@ -1,0 +1,145 @@
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--grey-50);
+    border-radius: 20px;
+}
+
+.containerBar {
+    width: 100%;
+    background-color: var(--grey-0);
+}
+
+.headerPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.875rem;
+}
+
+.logo {
+    padding-top: 0.893rem;
+}
+
+.headerPage .searchBox {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.869rem;
+    border-radius: 8px;
+    border: 2px solid var(--grey-20);
+    background-color: #FFFFFF;
+}
+
+.searchBox input {
+    margin: 1.281rem 0 1.281rem 1rem;
+    font-size: 16px;
+    width: 40%;
+}
+
+.productsList {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.cartContainer {
+    width: 100%;
+    padding: 1.25rem 1rem;
+    max-width: 768px;
+}
+
+.headerCartContainer {
+    background-color: var(--color-primary);
+    height: 65px;
+    border-radius: 8px 8px 0 0;
+}
+
+.noContentContainer {
+    height: 200px;
+    background-color: var(--grey-0);
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.totalFoodPriceBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    background-color: var(--grey-0);
+    border-top: 2px solid var(--grey-20);
+}
+
+.showPriceBox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 1.313rem;
+}
+
+@media (min-width: 768px) {
+
+    .headerPage {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .headerPage .searchBox {
+        width: 323px;
+    }
+    
+    .cartContainer {
+        padding: 0;
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .headerPage .searchBox {
+        width: 365px;
+    }
+    
+    .productsList {
+        flex-wrap: wrap;
+        max-height: 80vh;
+        max-width: 545px;
+        margin-left: 0;
+    }
+
+    .cartContainer {
+        margin: 0;
+        padding: 0;
+        max-width: 365px;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1380px) {
+
+    .headerPage .searchBox {
+        width: 363px;
+    }
+
+    .productsList {
+        max-width: unset;
+        max-height: unset;
+    }
+
+    .cartContainer {
+        margin: 0;
+        padding: 0;
+        max-width: 363px;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,55 @@
+.btn {
+    height: 40px;
+    width: 106px;
+    color: #FFFFFF;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.8s;
+}
+
+.btn.btnSearch {
+    margin-right: 0.625rem;
+    font-weight: 500;
+}
+
+.btn.addToCart {
+    margin-top: 0.875rem;
+    margin-left: 1.313rem;
+    font-weight: 600;
+}
+
+.btnRemoveFromCart {
+    height: 15px;
+    width: 51px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #BDBDBD;
+    cursor: pointer;
+    transition: 0.8s;
+    padding-top: 1rem;
+}
+
+.btn:hover {
+    transition: 0.8s;
+    background-color: var(--color-primary-50);
+    border: 2px solid var(--color-primary-50);
+}
+
+.btnRemoveFromCart:hover {
+    color: var(--grey-50);
+    transition: 0.8s;
+}
+
+.btnRemoveAll {
+    width: 90%;
+    height: 60px;
+    color: var(--grey-50);
+    background-color: var(--grey-20);
+    border-radius: 8px;
+    border: 2px solid var(--grey-20);
+    cursor: pointer;
+    margin-top: 1.375rem;
+}
